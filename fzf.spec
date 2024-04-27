@@ -34,3 +34,6 @@ install -m 755 -Dp target/%{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Sat Apr 27 2024 Vineel Sai <mail@vineelsai.com> 0.50.0-1
+- new package built with tito
+
