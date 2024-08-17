@@ -1,5 +1,5 @@
 Name:           fzf
-Version:        0.50.0
+Version:        0.54.3
 Release:        1
 Summary:        A command-line fuzzy finder
 
@@ -21,7 +21,7 @@ fzf is a general-purpose command-line fuzzy finder.
 %build
 rm -rf ./* ./.*
 git clone %{url} .
-git checkout %{version}
+git checkout v%{version}
 make
 
 %install
@@ -36,4 +36,3 @@ install -m 755 -Dp target/%{name} %{buildroot}%{_bindir}/%{name}
 %changelog
 * Sat Apr 27 2024 Vineel Sai <mail@vineelsai.com> 0.50.0-1
 - new package built with tito
-
